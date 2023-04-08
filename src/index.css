@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after {
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	min-height: 100%;
+	font-size: 16px;
+	background-color: rgb(60, 60, 61);
+}
