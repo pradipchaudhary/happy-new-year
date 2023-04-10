@@ -47,7 +47,7 @@ const Main = () => {
 	});
 	// Loading function
 	if (loading) {
-		return <h1>Loading...</h1>;
+		return <div className='loading'>Loading...</div>;
 	}
 
 	// New year end
@@ -57,7 +57,10 @@ const Main = () => {
 	return (
 		<main>
 			<div className='container'>
-				<h1>Happy New Year 2080</h1>
+				<div className='show_text'>
+					<p>Countdown to new year</p>
+					<h1>2080</h1>
+				</div>
 				<div className='showtime'>
 					<div className='flex'>
 						<div className='font-big'>{countdown.days}</div>
