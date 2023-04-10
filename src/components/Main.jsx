@@ -44,21 +44,24 @@ const Main = () => {
 	return (
 		<main>
 			<div className='container'>
-				<div className='flex'>
-					<div className='font-big'>{countdown.days}</div>
-					<div className='font-small'>DAYS</div>
-				</div>
-				<div className='flex'>
-					<div className='font-big'>{countdown.hours}</div>
-					<div className='font-small'>HOURS</div>
-				</div>
-				<div className='flex'>
-					<div className='font-big'>{countdown.minutes}</div>
-					<div className='font-small'>MINUTES</div>
-				</div>
-				<div className='flex'>
-					<div className='font-big'>{countdown.seconds}</div>
-					<div className='font-small'>SECOND</div>
+				<h1>Happy New Year 2080</h1>
+				<div className='showtime'>
+					<div className='flex'>
+						<div className='font-big'>{countdown.days}</div>
+						<div className='font-small'>DAYS</div>
+					</div>
+					<div className='flex'>
+						<div className='font-big'>{countdown.hours}</div>
+						<div className='font-small'>HOURS</div>
+					</div>
+					<div className='flex'>
+						<div className='font-big'>{countdown.minutes}</div>
+						<div className='font-small'>MINUTES</div>
+					</div>
+					<div className='flex'>
+						<div className='font-big'>{countdown.seconds}</div>
+						<div className='font-small'>SECOND</div>
+					</div>
 				</div>
 			</div>
 		</main>
