@@ -29,18 +29,31 @@ const getTimedelta = () => {
 
 const Main = () => {
 	const [countdown, setCountdown] = useState(getTimedelta);
-	// const [loading, setLoading] = useState(true);
+	const [loading, setLoading] = useState(true);
+	const [isNewYear, setIsNewYear] = useState(false);
+
+	// useEffect
 	useEffect(() => {
 		const interval = setInterval(() => {
 			const timedelta = getTimedelta();
 			setCountdown(timedelta);
+			setLoading(false);
+
+			if (timedelta.seconds < 0) {
+				setIsNewYear(true);
+			}
 		}, 1000);
 		return () => clearInterval(interval);
 	});
 	// Loading function
-	// if (loading) {
-	// 	return <h1>Loading...</h1>;
-	// }
+	if (loading) {
+		return <h1>Loading...</h1>;
+	}
+
+	// New year end
+	if (isNewYear) {
+		return <h1> Happy New Year 2080.</h1>;
+	}
 	return (
 		<main>
 			<div className='container'>
