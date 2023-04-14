@@ -52,7 +52,7 @@ const Main = () => {
 
 	// New year end
 	if (isNewYear) {
-		return <h1> Happy New Year 2080.</h1>;
+		return <div className='newYear'> Happy New Year 2080.</div>;
 	}
 	return (
 		<main>
