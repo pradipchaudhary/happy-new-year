@@ -64,15 +64,21 @@ const NewYear = () => {
     });
     // Loading function
     if (loading) {
-        return <div className="loading">Loading...</div>;
+        return (
+            <div className="loading w-screen h-screen flex justify-center items-center">
+                Loading...
+            </div>
+        );
     }
 
     return (
         <main className="w-screen h-screen flex justify-center items-center">
             <div className="container">
                 <div className="text-center">
-                    <p className="text-xl">Happy New Year.</p>
-                    <h1 className="text-8xl font-bold p-2 mt-6">2024</h1>
+                    <p className="text-2xl">Happy New Year.</p>
+                    <h1 className="text-9xl font-bold p-2 mt-6 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+                        2024
+                    </h1>
                 </div>
             </div>
         </main>
